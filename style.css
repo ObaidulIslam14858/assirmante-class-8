@@ -8,10 +8,63 @@ body {
   background-color: #000000;
   padding: 20px;
   margin: 0;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+}
+
+/* modal */
+.modalTop {
+  width: 300px;
+}
+#openModalBTN {
+  background-color: #e52727;
+  color: white;
+  margin-top: 20px;
+  padding: 5px;
+  border-style: none;
+  border: 2px solid brown;
+  border-radius: 10px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+  position: relative;
+}
+.underLine {
+  text-decoration: underline;
+  color: #ad0303;
+}
+.close {
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: rgb(234, 81, 81);
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  border: #e52727 solid 1px;
+  padding: 10px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+/* calculator */
+.calculatorBottom {
+  margin-top: 30px;
 }
 .calculator {
   background-color: #fff9f9;
@@ -37,8 +90,8 @@ body {
   gap: 10px;
   background-color: #ffffff;
 }
-#pauls{
-  grid-row:span 2;
+#pauls {
+  grid-row: span 2;
 }
 button {
   padding: 5px;

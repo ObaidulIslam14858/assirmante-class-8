@@ -1,3 +1,24 @@
+// modal
+document.addEventListener('DOMContentLoaded', function () {
+  const openModalBTN = document.getElementById('openModalBTN')
+  const myModal = document.getElementById('myModal')
+  const closeModalBTN = document.getElementById('closeModalBTN')
+  // open the modal
+  openModalBTN.addEventListener('click', function () {
+    myModal.style.display = 'block'
+  })
+  // clase the modal
+  closeModalBTN.addEventListener('click', function () {
+    myModal.style.display = 'none'
+  })
+  // close the modal if user click
+  window.addEventListener('click', function (even) {
+    if (even.target === myModal) {
+      myModal.style.display = 'none'
+    }
+  })
+})
+// calculator
 function appendToDisplay(value) {
   const display = document.getElementById('display')
   display.value += value
